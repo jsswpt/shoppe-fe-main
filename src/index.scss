@@ -1,0 +1,18 @@
+@import '@jsswpt/shoppe-ui-kit/dist/style.css';
+
+body {
+  background: var(--MAIN1);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100svh;
+}
+
+h1 {
+  margin-bottom: 30svh;
+  font-size: 3rem;
+  font-weight: 300;
+}

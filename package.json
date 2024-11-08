@@ -1,0 +1,42 @@
+{
+  "name": "shoppe-fe-main",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "yarn@4.5.1",
+  "scripts": {
+    "watch": "astro dev --port 3000",
+    "build": "astro check && astro build",
+    "fix:eslint": "yarn eslint . --fix --cache",
+    "fix:prettier": "yarn prettier . --write --cache",
+    "watch:nodemon": "nodemon --quiet --watch . -e astro,js,mjs,json,ts,tsx,html,yml,scss --exec",
+    "watch:eslint": "yarn watch:nodemon 'yarn fix:eslint'",
+    "watch:prettier": "yarn watch:nodemon 'yarn fix:prettier'",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/react": "^3.6.2",
+    "@jsswpt/shoppe-ui-kit": "^0.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "astro": "^4.16.10",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "eslint": "^9.14.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-astro": "^1.3.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-sort": "^4.0.0",
+    "globals": "^15.12.0",
+    "husky": "^9.1.6",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1",
+    "sass-embedded": "^1.80.6",
+    "typescript-eslint": "^8.13.0"
+  }
+}
